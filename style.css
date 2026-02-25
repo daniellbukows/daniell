@@ -605,32 +605,74 @@ header.scrolled {
     background: #FF0000;
     color: white;
 }
-<section class="pricing-clean">
-  <div class="pricing-row">
+/* ===== PRICING LIMPO ===== */
 
-    <div class="card">
-      <div class="discount">80% OFF</div>
-      <h3>Essencial</h3>
-      <p>Perfeito para começar</p>
-      <h2>R$ 29,90<span>/mês</span></h2>
-    </div>
+.pricing-clean {
+  padding: 100px 20px;
+  background: #0f0f0f;
+}
 
-    <div class="card destaque">
-      <div class="popular">MAIS POPULAR</div>
-      <div class="discount">85% OFF</div>
-      <h3>Estratégico</h3>
-      <p>Mais escolhido pelos clientes</p>
-      <h2>R$ 59,90<span>/mês</span></h2>
-    </div>
+.pricing-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-    <div class="card">
-      <div class="discount">74% OFF</div>
-      <h3>Premium</h3>
-      <p>Crescimento e autoridade</p>
-      <h2>R$ 119,90<span>/mês</span></h2>
-    </div>
+.pricing-row .card {
+  background: #1a1a1a;
+  width: 300px;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #2a2a2a;
+  position: relative;
+  text-align: center;
+  transition: 0.3s;
+}
 
-  </div>
+.pricing-row .card:hover {
+  transform: translateY(-10px);
+  border-color: #673de6;
+}
+
+.pricing-row .destaque {
+  border: 2px solid #673de6;
+  transform: scale(1.05);
+}
+
+.discount {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #84cc16;
+  color: black;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.popular {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #673de6;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card h2 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.card h2 span {
+  font-size: 14px;
+  color: #aaa;
+}
 </section>
 /* Footer */
 footer {
@@ -757,6 +799,7 @@ footer {
     color: #fff;
 
 }
+
 
 
 
