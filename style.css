@@ -605,87 +605,94 @@ header.scrolled {
     background: #FF0000;
     color: white;
 }
-/* ================= PLANOS ================= */
+<!-- ================= PLANOS STYLE HOSTINGER ================= -->
+<section id="plans" class="plans-section">
+    <div class="container">
 
-.plans-section {
-    padding: 100px 0;
-    background: var(--paper-color);
-}
+        <div class="plans-wrapper">
 
-.plans-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
+            <!-- Plano 1 -->
+            <div class="plan-box">
+                <div class="discount-badge">80% OFF</div>
 
-.plan-card {
-    background: var(--card-color);
-    padding: 2.5rem 2rem;
-    border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: var(--transition-speed);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+                <h3>Essencial</h3>
+                <p class="plan-sub">Perfeito para começar</p>
 
-.plan-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--primary-color);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-}
+                <div class="price-area">
+                    <span class="old-price">R$ 97,00</span>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">29</span>
+                        <span class="cents">,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                </div>
 
-.plan-card h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
+                <a href="#" class="plan-btn">Escolher plano</a>
 
-.plan-desc {
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-}
+                <ul class="features">
+                    <li>Diagnóstico estratégico</li>
+                    <li>Planejamento mensal</li>
+                    <li>1 reunião mensal</li>
+                </ul>
+            </div>
 
-.plan-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 2rem;
-}
+            <!-- Plano Destaque -->
+            <div class="plan-box featured">
+                <div class="popular-tag">MAIS POPULAR</div>
+                <div class="discount-badge">85% OFF</div>
 
-.plan-card ul li {
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
-    color: #ccc;
-    position: relative;
-    padding-left: 20px;
-}
+                <h3>Estratégico</h3>
+                <p class="plan-sub">Mais escolhido pelos clientes</p>
 
-.plan-card ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--secondary-color);
-}
+                <div class="price-area">
+                    <span class="old-price">R$ 197,00</span>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">59</span>
+                        <span class="cents">,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                </div>
 
-/* Destaque */
-.plan-card.featured {
-    border: 1px solid var(--primary-color);
-    background: linear-gradient(145deg, #141414, #1f1f1f);
-    transform: scale(1.03);
-}
+                <a href="#" class="plan-btn primary">Escolher plano</a>
 
-.plan-badge {
-    position: absolute;
-    top: -12px;
-    right: 20px;
-    background: var(--accent-gradient);
-    padding: 6px 16px;
-    font-size: 0.7rem;
-    border-radius: 50px;
-    font-weight: 600;
-    color: white;
-}
+                <ul class="features">
+                    <li>Tudo do Essencial</li>
+                    <li>Análise de concorrência</li>
+                    <li>2 reuniões mensais</li>
+                </ul>
+            </div>
+
+            <!-- Plano 3 -->
+            <div class="plan-box">
+                <div class="discount-badge">74% OFF</div>
+
+                <h3>Premium</h3>
+                <p class="plan-sub">Crescimento e autoridade</p>
+
+                <div class="price-area">
+                    <span class="old-price">R$ 397,00</span>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">119</span>
+                        <span class="cents">,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                </div>
+
+                <a href="#" class="plan-btn">Escolher plano</a>
+
+                <ul class="features">
+                    <li>Tudo do Estratégico</li>
+                    <li>Supervisão contínua</li>
+                    <li>Planejamento de campanhas</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
 /* Footer */
 footer {
     background: black;
@@ -811,3 +818,4 @@ footer {
     color: #fff;
 
 }
+
