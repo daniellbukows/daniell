@@ -605,93 +605,141 @@ header.scrolled {
     background: #FF0000;
     color: white;
 }
-<!-- ================= PLANOS STYLE HOSTINGER ================= -->
-<section id="plans" class="plans-section">
-    <div class="container">
+/* ===== PRICING SECTION ===== */
 
-        <div class="plans-wrapper">
+.pricing-section {
+  padding: 100px 20px;
+  background: #0f0f0f;
+}
 
-            <!-- Plano 1 -->
-            <div class="plan-box">
-                <div class="discount-badge">80% OFF</div>
+.pricing-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-                <h3>Essencial</h3>
-                <p class="plan-sub">Perfeito para começar</p>
+.pricing-card {
+  background: #161616;
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 320px;
+  position: relative;
+  border: 1px solid #222;
+  transition: 0.3s ease;
+}
 
-                <div class="price-area">
-                    <span class="old-price">R$ 97,00</span>
-                    <div class="price">
-                        <span class="currency">R$</span>
-                        <span class="amount">29</span>
-                        <span class="cents">,90</span>
-                        <span class="period">/mês</span>
-                    </div>
-                </div>
+.pricing-card:hover {
+  transform: translateY(-10px);
+  border-color: #7c3aed;
+}
 
-                <a href="#" class="plan-btn">Escolher plano</a>
+.pricing-card.featured {
+  border: 2px solid #7c3aed;
+  transform: scale(1.05);
+}
 
-                <ul class="features">
-                    <li>Diagnóstico estratégico</li>
-                    <li>Planejamento mensal</li>
-                    <li>1 reunião mensal</li>
-                </ul>
-            </div>
+.top-label {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg,#7c3aed,#9333ea);
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
 
-            <!-- Plano Destaque -->
-            <div class="plan-box featured">
-                <div class="popular-tag">MAIS POPULAR</div>
-                <div class="discount-badge">85% OFF</div>
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #84cc16;
+  color: black;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 50px;
+  font-weight: 700;
+}
 
-                <h3>Estratégico</h3>
-                <p class="plan-sub">Mais escolhido pelos clientes</p>
+.subtitle {
+  color: #aaa;
+  margin-bottom: 20px;
+}
 
-                <div class="price-area">
-                    <span class="old-price">R$ 197,00</span>
-                    <div class="price">
-                        <span class="currency">R$</span>
-                        <span class="amount">59</span>
-                        <span class="cents">,90</span>
-                        <span class="period">/mês</span>
-                    </div>
-                </div>
+.old {
+  text-decoration: line-through;
+  color: #666;
+  font-size: 14px;
+}
 
-                <a href="#" class="plan-btn primary">Escolher plano</a>
+.price {
+  display: flex;
+  align-items: flex-end;
+  margin: 15px 0 25px 0;
+}
 
-                <ul class="features">
-                    <li>Tudo do Essencial</li>
-                    <li>Análise de concorrência</li>
-                    <li>2 reuniões mensais</li>
-                </ul>
-            </div>
+.currency {
+  font-size: 18px;
+  margin-right: 5px;
+}
 
-            <!-- Plano 3 -->
-            <div class="plan-box">
-                <div class="discount-badge">74% OFF</div>
+.value {
+  font-size: 50px;
+  font-weight: 700;
+}
 
-                <h3>Premium</h3>
-                <p class="plan-sub">Crescimento e autoridade</p>
+.cents {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
 
-                <div class="price-area">
-                    <span class="old-price">R$ 397,00</span>
-                    <div class="price">
-                        <span class="currency">R$</span>
-                        <span class="amount">119</span>
-                        <span class="cents">,90</span>
-                        <span class="period">/mês</span>
-                    </div>
-                </div>
+.month {
+  font-size: 14px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #aaa;
+}
 
-                <a href="#" class="plan-btn">Escolher plano</a>
+.btn-outline,
+.btn-primary {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-                <ul class="features">
-                    <li>Tudo do Estratégico</li>
-                    <li>Supervisão contínua</li>
-                    <li>Planejamento de campanhas</li>
-                </ul>
-            </div>
+.btn-outline {
+  border: 1px solid #555;
+  color: white;
+}
 
-        </div>
-    </div>
+.btn-outline:hover {
+  background: #7c3aed;
+  border-color: #7c3aed;
+}
+
+.btn-primary {
+  background: #7c3aed;
+  color: white;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
 </section>
 /* Footer */
 footer {
@@ -818,4 +866,5 @@ footer {
     color: #fff;
 
 }
+
 
