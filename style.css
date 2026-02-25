@@ -605,7 +605,87 @@ header.scrolled {
     background: #FF0000;
     color: white;
 }
+/* ================= PLANOS ================= */
 
+.plans-section {
+    padding: 100px 0;
+    background: var(--paper-color);
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.plan-card {
+    background: var(--card-color);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: var(--transition-speed);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.plan-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.plan-desc {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.plan-card ul li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: #ccc;
+    position: relative;
+    padding-left: 20px;
+}
+
+.plan-card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+/* Destaque */
+.plan-card.featured {
+    border: 1px solid var(--primary-color);
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    transform: scale(1.03);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--accent-gradient);
+    padding: 6px 16px;
+    font-size: 0.7rem;
+    border-radius: 50px;
+    font-weight: 600;
+    color: white;
+}
 /* Footer */
 footer {
     background: black;
@@ -729,4 +809,5 @@ footer {
     font-weight: 600;
     margin-top: 2rem;
     color: #fff;
+
 }
