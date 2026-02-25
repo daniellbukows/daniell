@@ -605,141 +605,32 @@ header.scrolled {
     background: #FF0000;
     color: white;
 }
-/* ===== PRICING SECTION ===== */
+<section class="pricing-clean">
+  <div class="pricing-row">
 
-.pricing-section {
-  padding: 100px 20px;
-  background: #0f0f0f;
-}
+    <div class="card">
+      <div class="discount">80% OFF</div>
+      <h3>Essencial</h3>
+      <p>Perfeito para começar</p>
+      <h2>R$ 29,90<span>/mês</span></h2>
+    </div>
 
-.pricing-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+    <div class="card destaque">
+      <div class="popular">MAIS POPULAR</div>
+      <div class="discount">85% OFF</div>
+      <h3>Estratégico</h3>
+      <p>Mais escolhido pelos clientes</p>
+      <h2>R$ 59,90<span>/mês</span></h2>
+    </div>
 
-.pricing-card {
-  background: #161616;
-  padding: 40px 30px;
-  border-radius: 20px;
-  width: 320px;
-  position: relative;
-  border: 1px solid #222;
-  transition: 0.3s ease;
-}
+    <div class="card">
+      <div class="discount">74% OFF</div>
+      <h3>Premium</h3>
+      <p>Crescimento e autoridade</p>
+      <h2>R$ 119,90<span>/mês</span></h2>
+    </div>
 
-.pricing-card:hover {
-  transform: translateY(-10px);
-  border-color: #7c3aed;
-}
-
-.pricing-card.featured {
-  border: 2px solid #7c3aed;
-  transform: scale(1.05);
-}
-
-.top-label {
-  position: absolute;
-  top: -18px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(90deg,#7c3aed,#9333ea);
-  padding: 6px 20px;
-  border-radius: 50px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #84cc16;
-  color: black;
-  padding: 4px 12px;
-  font-size: 12px;
-  border-radius: 50px;
-  font-weight: 700;
-}
-
-.subtitle {
-  color: #aaa;
-  margin-bottom: 20px;
-}
-
-.old {
-  text-decoration: line-through;
-  color: #666;
-  font-size: 14px;
-}
-
-.price {
-  display: flex;
-  align-items: flex-end;
-  margin: 15px 0 25px 0;
-}
-
-.currency {
-  font-size: 18px;
-  margin-right: 5px;
-}
-
-.value {
-  font-size: 50px;
-  font-weight: 700;
-}
-
-.cents {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.month {
-  font-size: 14px;
-  margin-left: 5px;
-  margin-bottom: 10px;
-  color: #aaa;
-}
-
-.btn-outline,
-.btn-primary {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-outline {
-  border: 1px solid #555;
-  color: white;
-}
-
-.btn-outline:hover {
-  background: #7c3aed;
-  border-color: #7c3aed;
-}
-
-.btn-primary {
-  background: #7c3aed;
-  color: white;
-}
-
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  color: #ccc;
-}
-
-.pricing-card ul li {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
+  </div>
 </section>
 /* Footer */
 footer {
@@ -866,5 +757,6 @@ footer {
     color: #fff;
 
 }
+
 
 
